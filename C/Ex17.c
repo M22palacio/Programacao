@@ -13,15 +13,15 @@ int A, B, C, m, n, o, p ,q, r;
 printf("\nPROGRAMA PARA IDENTIFICAR TRIANGULO RETANGULO");
 
 //Solicita entrada de dados para o usuário e grava o valor digitado na variável "A"
-printf("\nDigite o primeiro valor A: ");
+printf("\nDigite o valor A: ");
 scanf("%i",&A);
 
 //Solicita entrada de dados para o usuário e grava o valor digitado na variável "B"
-printf("Digite o segundo valor B: ");
+printf("Digite o valor B: ");
 scanf("%i",&B);
 
 //Solicita entrada de dados para o usuário e grava o valor digitado na variável "C"
-printf("Digite o terceiro valor C: ");
+printf("Digite o valor C: ");
 scanf("%i",&C);
 
 //Satisfazer as condições de existência do triângulo retângulo 
@@ -33,10 +33,10 @@ q = (B*B);
 r = (C*C);
 
 if (m==p || n==q || o==r){
-printf("Valores satisfazem a condicao de triangulo retangulo");
+printf("Valores satisfazem a condicao de existencia do triangulo retangulo");
 }
 else{
-    printf("Valores nao satisfazem a condicao de triangulo retangulo!");
+    printf("Valores nao satisfazem a condicao de existencia do triangulo retangulo!");
     return 0;
    }
 
