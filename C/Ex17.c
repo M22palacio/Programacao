@@ -10,7 +10,7 @@ int A, B, C, m, n, o, p ,q, r;
 // PROGRAMA 16 - VERIFICAR SE OS VALORES DIGITADOS FORMAM UM TRIÂNGULO RETÂNGULO
 
 //Exibe na tela 
-printf("\nPROGRAMA PARA IDENTIFICAR TRIANGULO RETANGULO");
+printf("\nPROGRAMA PARA VERIFICAR SE VALORES FORMAM UM TRIANGULO RETANGULO");
 
 //Solicita entrada de dados para o usuário e grava o valor digitado na variável "A"
 printf("\nDigite o valor A: ");
@@ -33,24 +33,12 @@ q = (B*B);
 r = (C*C);
 
 if (m==p || n==q || o==r){
-printf("Valores satisfazem a condicao de existencia do triangulo retangulo");
+printf("TRIANGULO RETANGULO");
 }
 else{
-    printf("Valores nao satisfazem a condicao de existencia do triangulo retangulo!");
+    printf("VALORES NAO FORMAM UM TRIANGULO RETANGULO");
     return 0;
    }
-
-//Verifica condições de triângulo retangulo.
-if(m == p) {
-printf("\nTRIANGULO RETANGULO");
-}
-
-else if(n == q){
-    printf("\nTRIANGULO RETANGULO");
-}
-else if(o == r){
-    printf("\nTRIANGULO RETANGULO");
-}
 
 return 0;
 }
