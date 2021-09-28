@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<ctype.h>
 
 //Função principal do programa
 int main(int argc, char const *argv[])
@@ -18,11 +19,16 @@ printf("\nDigite o sexo: ");
 scanf("%s",&sexo);
 
 //toupper - converte em maiusculo e tolower - converte em minúsculo
-while((toupper(sexo)!='M') && (toupper(sexo) !='F')){
-printf("Erro!\nDigite novamente!: ");
+while((toupper(sexo)!='F') && (toupper(sexo)!= 'M')){
+printf("Erro!\nSomente F ou M. Digite novamente!: ");
 scanf("%s",&sexo);
 }
-printf ("Obrigado!");
+if(sexo =='M'){
+printf("Sexo Masculino");
+}
+else {
+printf("Sexo Feminino");
+}
 
 return 0;
 }
