@@ -7,7 +7,7 @@
 int main(int argc, char const *argv[])
 {
 // Declaração das variáveis
-int fn, f1=0, f2=1;
+int fn, f1=1, f2=0;
 
 // PROGRAMA 30 - EXIBIR OS TRINTA PRIMEIROS VALORES DA SÉRIE DE FIBONACCI
                       
@@ -15,7 +15,7 @@ int fn, f1=0, f2=1;
 printf("EXIBIR OS TRINTA PRIMEIROS NUMEROS DA SERIE DE FIBONACCI");
 
 printf("\nPressione qualquer tecla para iniciar: ");
-fn = getch();
+getch();
 
 for(int i=0; i<30; i++){
 fn=f1+f2;
