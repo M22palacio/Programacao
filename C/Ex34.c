@@ -23,8 +23,8 @@ for (int i=0; i<10; i++){
 printf("O maior valor e:\n");
 
 //Encontra o maior valor do vetor
-maior=numeros[0]; //Considerando a posição 0 do vetor como sendo a do maior número
-for (int i=1; i<10; i++){
+maior=numeros[0]; //Considerando a posição [0] do vetor como sendo a do maior número
+for (int i=1; i<10; i++){   //Varrendo o vetor
     if(numeros[i]>maior){  //Se, algum número de outra posição, for maior que o número da posição [0]
         maior=numeros[i]; //Atribui esse número como sendo o maior
         }
