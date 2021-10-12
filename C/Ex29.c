@@ -15,7 +15,7 @@ int res;
 printf("EXIBIR A SOMA DOS NUMEROS INTEIROS POSITIVOS DO INTERVALO 1 A 100");
 
 printf("\nPressione qualquer tecla para iniciar: ");
-res= getch();
+getch();
 
 res=(1+100)*(100/2);
 printf("\nO resultado da soma e: %i", res);
