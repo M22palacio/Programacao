@@ -23,7 +23,7 @@ while((toupper(sexo)!='F') && (toupper(sexo)!= 'M')){
 printf("Erro!\nSomente F ou M. Digite novamente!: ");
 scanf("%s",&sexo);
 }
-if(sexo =='M'){
+if(sexo =='m' || sexo =='M'){
 printf("Sexo Masculino");
 }
 else {
