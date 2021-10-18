@@ -20,11 +20,12 @@ int i,res,qtde,cons,valor=0;
 int *numeros;
 
 do
-{system("cls");
+{
+system("cls");
 //Exibe na tela
 printf("ARMAZENAR UM MAXIMO DE 20 VALORES E CRIAR UMA ROTINA DE CONSULTA EXIBINDO SUA POSICAO NO VETOR");
 
-printf("\nDigite um maximo de 20 valores: ");
+printf("\nDigite a quantidade de valores: ");
 scanf("%i", &qtde);
 
 //Laço de condição 
@@ -39,29 +40,27 @@ numeros = (int*)malloc(qtde*sizeof(int));
 
 printf("Digite os numeros:\n");
 for(i=0; i<qtde; i++){
-    printf("Posicao %i: ",i); //Mostra a posição no vetor a cada número digitado
     scanf("%i", &numeros[i]);
 }
 //Rotina de consulta
-printf("\nDigite um numero para consulta: ");
+printf("Digite um numero para consulta: ");
 scanf("%i", &cons);
 
 //Varrendo o vetor
 for(i=0; i<qtde; i++){ 
-//Se o valor da consulta for igual a algum valor de vetor
+//Se o valor da consulta for igual a algum valor do vetor
    if (cons==numeros[i]){ 
-       printf("\nO Numero %i se encontra na Posicao %i do vetor\n",cons,i);
+       printf("O Numero %i se encontra na Posicao %i do vetor",cons,i);
    }
 //Se não for igual a nenhum valor do vetor, acrescenta 1 na variável "valor"
-   else {valor=valor+1; 
+   else {valor++; 
    }
 //Qdo "valor" for igual a "qtde", o Looping foi de "0" até "qtde" e não encontrou o valor
    if(valor==qtde){
-       printf("\nValor nao encontrado!");
+       printf("Valor nao encontrado!");
+       valor=0; //Atribui zero a variável valor para nova consulta
    }
-else{}  
 }
-
 printf("\nDigite 1 para nova consulta ou 2 para sair: ");
     scanf("%i",&res); 
 }while(res !=2);
