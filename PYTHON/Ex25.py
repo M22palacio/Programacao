@@ -8,6 +8,6 @@ while num !=5:
     print(f"Erro!Apenas o número 5")
     num = int(input("Digite novamente: "))
 
-for i in range(1, 11, 1): #range ( parte do 1, vai até o 11, no passo 1 em 1)  
+for i in range(1, 11, 1): #range ( parte do 1, vai até inteiro menor que 11, no passo 1 em 1)  
     res = num * i
     print(f'{num} x {i} = {res}')
