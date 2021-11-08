@@ -20,6 +20,6 @@ while B<A:
     print(f"Erro! Fim do intervalo deve ser maior que o início")
     B = int(input("Digite novamente o fim do intervalo: "))
 
-for i in range(B, A-1, -1): #range ( parte do B, vai até inteiro maior que 0, no passo -1 )  
+for i in range(B, A-1, -1): #range ( parte do B, vai até inteiro A, no passo -1 )  
     res = num * i
     print(f'{num} x {i} = {res}')
