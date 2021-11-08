@@ -1,7 +1,7 @@
 ''' Exibir os trinta primeiros valores da série de Fibonacci'''
 
 print("Exibir os 30 primeiros números da série de Fibonacci")
-input("Pressione enter para continuar: ")
+input("Pressione enter para iniciar: ")
 
 f1=1
 f2=0
