@@ -17,7 +17,7 @@ a=1
 b=1
 soma=0
 
-for i in range(0,num+1,1): #range ( parte do 0, vai até inteiro num, no passo 1 em 1 )  
+for i in range(0,num,1): #range ( parte do 0, vai até inteiro num, no passo 1 em 1 )  
     a=a+b
     b=b+2
     print(f"{a}")
